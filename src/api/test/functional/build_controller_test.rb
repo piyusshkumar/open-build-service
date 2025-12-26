@@ -321,7 +321,7 @@ class BuildControllerTest < ActionDispatch::IntegrationTest
   def test_result_lastsuccess_false
     get '/build/home:Iggy/_result?lastsuccess=false&pathproject=kde4&package=TestPack'
     assert_response :not_found
-    end
+  end
 
   def test_result_lastsuccess_one
     get '/build/home:Iggy/_result?lastsuccess=1&pathproject=kde4&package=TestPack'
